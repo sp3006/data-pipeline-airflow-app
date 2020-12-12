@@ -14,7 +14,7 @@
     Install Docker
     Udacity or Free tier AWS account and Redshift cluster
   ## Clone repository to local machine
-     https://github.com/sp3006/nanodegree-data-pipelines-using-airflow.git
+     https://github.com/sp3006/data-pipeline-airflow-app.git
      Change directory to local repository
      cd data-pipeline-airflow-app
 # Create python virtual environment
