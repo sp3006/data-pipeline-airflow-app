@@ -46,4 +46,3 @@
 
        
     
-https://video.udacity-data.com/topher/2019/February/5c5aaca1_admin-connections/admin-connections.png
