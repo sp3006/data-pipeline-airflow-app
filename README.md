@@ -60,7 +60,12 @@
         Port: Enter 5439.
         Once you've entered these values, select Save.
 
-![https://github.com/sp3006/data-pipeline-airflow-app/issues/2#issue-771130402]
+![Airflow Image]https://github.com/sp3006/data-pipeline-airflow-app/issues/2#issue-771130402
        
 
+# On the create connection page, enter the following values:
 
+        Conn Id: Enter aws_credentials.
+        Conn Type: Enter Amazon Web Services.
+        Login: Enter your Access key ID from the IAM User credentials you downloaded earlier.
+        Password: Enter your Secret access key from the IAM User credentials you downloaded earlier.
