@@ -69,4 +69,4 @@
         Conn Type: Enter Amazon Web Services.
         Login: Enter your Access key ID from the IAM User credentials you downloaded earlier.
         Password: Enter your Secret access key from the IAM User credentials you downloaded earlier.
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text](https://github.com/sp3006/data-pipeline-airflow-app/blob/main/airflow/images/Udacity-Project-Airflow-Connection.png?raw=true "Logo Title Text 1")
