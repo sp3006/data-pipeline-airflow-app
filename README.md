@@ -60,7 +60,7 @@
         Port: Enter 5439.
         Once you've entered these values, select Save.
 
-<href> url=https://github.com/sp3006/data-pipeline-airflow-app/blob/main/airflow/images/Udacity-Project-Airflow-Connection.png > </href>
+<href> image=https://github.com/sp3006/data-pipeline-airflow-app/blob/main/airflow/images/Udacity-Project-Airflow-Connection.png > </href>
        
 
- ![Tux, the Linux mascot](airflow/images/tux.png)
+
