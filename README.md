@@ -57,5 +57,5 @@
     Port: Enter 5439.
     Once you've entered these values, select Save.
 
-  ##https://github.com/sp3006/data-pipeline-airflow-app/blob/main/airflow/images/Udacity-Project-Airflow-Connection.png
+    <https://github.com/sp3006/data-pipeline-airflow-app/blob/main/airflow/images/Udacity-Project-Airflow-Connection.png>
        
