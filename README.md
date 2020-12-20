@@ -62,3 +62,5 @@
 
 <href> url=https://github.com/sp3006/data-pipeline-airflow-app/blob/main/airflow/images/Udacity-Project-Airflow-Connection.png > </href>
        
+
+    ![Tux, the Linux mascot](/images/tux.png)
