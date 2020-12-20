@@ -60,7 +60,7 @@
         Port: Enter 5439.
         Once you've entered these values, select Save.
 
-![Airflow Image]https://github.com/sp3006/data-pipeline-airflow-app/issues/2#issue-771130402
+    ![Airflow Image]https://github.com/sp3006/data-pipeline-airflow-app/issues/2#issue-771130402
        
 
 # On the create connection page, enter the following values:
