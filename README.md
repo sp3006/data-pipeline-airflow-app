@@ -43,7 +43,7 @@
 # Airflow Env:
     Our airflow is runing under the local virtual environment 
     https://localhost:8080
-# Airflow Configurations and Connection Id
+# Steps to configure the redshift using Airflow UI
     On the next create connection page, enter the following values:
 
         Conn Id: Enter redshift.
@@ -60,5 +60,5 @@
         Port: Enter 5439.
         Once you've entered these values, select Save.
 
-    
+# https://github.com/sp3006/data-pipeline-airflow-app/blob/main/airflow/images/Udacity-Project-Airflow-Connection.png
        
