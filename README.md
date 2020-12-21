@@ -60,7 +60,7 @@
         Port: Enter 5439.
         Once you've entered these values, select Save.
 
- ![alt text]https://github.com/sp3006/data-pipeline-airflow-app/blob/main/airflow/images/Udacity-Project-Airflow-Connection.png
+ ![alt text](https://github.com/sp3006/data-pipeline-airflow-app/blob/main/airflow/images/Udacity-Project-Airflow-Connection.png)
        
 
 # On the create connection page, enter the following values:
