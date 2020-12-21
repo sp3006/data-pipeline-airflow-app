@@ -43,5 +43,32 @@
 # Airflow Env:
     Our airflow is runing under the local virtual environment 
     https://localhost:8080
+# Steps to configure the redshift using Airflow UI
+    On the next create connection page, enter the following values:
 
+        Conn Id: Enter redshift.
+        Conn Type: Enter Postgres.
+        Host: Enter the endpoint of your Redshift cluster, excluding the port at the end. 
+              You can find this by selecting your cluster in the Clusters page of the Amazon 
+              Redshift console. 
+              See where this is located in the screenshot below. 
+        # IMPORTANT: Make sure to NOT include the port 
+              at the end of the Redshift endpoint string.
+        Schema: Enter dev. This is the Redshift database you want to connect to.
+        Login: Enter awsuser.
+        Password: Enter the password you created when launching your Redshift cluster.
+        Port: Enter 5439.
+        Once you've entered these values, select Save.
+
+![alt text](https://github.com/sp3006/data-pipeline-airflow-app/blob/main/airflow/images/Udacity-Project-Airflow-Connection.png)
        
+
+# On the create connection page, enter the following values:
+
+        Conn Id: Enter aws_credentials.
+        Conn Type: Enter Amazon Web Services.
+        Login: Enter your Access key ID from the IAM User credentials you downloaded earlier.
+        Password: Enter your Secret access key from the IAM User credentials you downloaded earlier.
+        
+        The below snapshot help to understand the end-point which can be used during the airflow connection addition.
+![alt text](https://github.com/sp3006/data-pipeline-airflow-app/blob/main/airflow/images/Redshift-Cluster-end-point.png)
