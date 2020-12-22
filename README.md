@@ -47,9 +47,16 @@
     Our airflow is runing under the local virtual environment 
     https://localhost:8080
 # Note : For this project we are using Postgres Database as our meta store for airflow. In order to point your instance of airflow to postgres db we need to 
-1. Create airflow user on your postgres DB
-2. Create the airflow db under postgres instance
-3. Run the airflow initdb
+        1. Create airflow user on your postgres DB
+        2. Create the airflow db under postgres instance
+        3. Run the airflow initdb
+        4. Make the change in ariflow.cfg
+
+        sql_alchemy_conn = postgresql+psycopg2://airflow:airflow@localhost:5432/airflow
+        sql_engine_encoding = utf-8
+        sql_alchemy_pool_enabled = True
+        sql_alchemy_pool_size = 5
+        sql_alchemy_max_overflow = 10
 
 SQL script is added for the same
 
@@ -70,8 +77,6 @@ SQL script is added for the same
         Port: Enter 5439.
         Once you've entered these values, select Save.
 
-![alt text](https://github.com/sp3006/data-pipeline-airflow-app/blob/main/airflow/images/Udacity-Project-Airflow-Connection.png)
-       
 
 # On the create connection page, enter the following values:
 
