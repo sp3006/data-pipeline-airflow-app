@@ -87,3 +87,23 @@ SQL script is added for the same
         
         The below snapshot help to understand the end-point which can be used during the airflow connection addition.
 ![alt text](https://github.com/sp3006/data-pipeline-airflow-app/blob/main/airflow/images/Redshift-Cluster-end-point.png)
+
+# Project Datasets
+    Here are the s3 links for datasets used in this project:
+
+    Log data: s3://udacity-dend/log_data Song data: s3://udacity-dend/song_data
+
+# Project Template Structure
+    Project has two directories named dags and plugins. A create tables script and readme file are at root level:
+
+    create_tables.sql: SQL create table statements provided with template.
+    dags directory contains:
+
+    sparkify_etl_dag.py: Defines main DAG, tasks and link the tasks in required order.
+    plugins/operators directory contains:
+
+    stage_redshift.py: Defines StageToRedshiftOperator to copy JSON data from S3 to staging tables in the Redshift via copy command.
+    load_dimension.py: Defines LoadDimensionOperator to load a dimension table from staging table(s).
+    load_fact.py: Defines LoadFactOperator to load fact table from staging table(s).
+    data_quality.py: Defines DataQualityOperator to run data quality checks on all tables passed as parameter.
+    sql_queries.py: Contains SQL queries for the ETL pipeline (provided in template).
