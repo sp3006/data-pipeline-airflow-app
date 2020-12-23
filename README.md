@@ -26,9 +26,12 @@
     linked to achieve a coherent and sensible data flow within the pipeline.You'll be provided with a helpers class that contains all 
     the SQL transformations. Thus, you won't need to write the ETL yourselves, but you'll need to execute it with your custom operators.
     
-# Tools used:
-    Install Python3
-    Install Docker
+# Tools and installations:
+    Python version used is Python-3 
+    brew install Docker
+    brew install Postgres 
+    pip install psycopg2-binary
+    
     Udacity or Free tier AWS account and Redshift cluster
   ## Clone repository to local machine
      https://github.com/sp3006/data-pipeline-airflow-app.git
@@ -43,6 +46,20 @@
 # Airflow Env:
     Our airflow is runing under the local virtual environment 
     https://localhost:8080
+# Note : For this project we are using Postgres Database as our meta store for airflow. In order to point your instance of airflow to postgres db we need to 
+        1. Create airflow user on your postgres DB
+        2. Create the airflow db under postgres instance
+        3. Run the airflow initdb
+        4. Make the change in ariflow.cfg
+
+        sql_alchemy_conn = postgresql+psycopg2://airflow:airflow@localhost:5432/airflow
+        sql_engine_encoding = utf-8
+        sql_alchemy_pool_enabled = True
+        sql_alchemy_pool_size = 5
+        sql_alchemy_max_overflow = 10
+
+SQL script is added for the same
+
 # Steps to configure the redshift using Airflow UI
     On the next create connection page, enter the following values:
 
@@ -60,8 +77,6 @@
         Port: Enter 5439.
         Once you've entered these values, select Save.
 
-![alt text](https://github.com/sp3006/data-pipeline-airflow-app/blob/main/airflow/images/Udacity-Project-Airflow-Connection.png)
-       
 
 # On the create connection page, enter the following values:
 
