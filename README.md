@@ -99,7 +99,7 @@ SQL script is added for the same
     create_tables.sql: SQL create table statements provided with template.
     dags directory contains:
 
-    sparkify_etl_dag.py: Defines main DAG, tasks and link the tasks in required order.
+    run_etl.py: Defines main DAG, tasks and link the tasks in required order.
     plugins/operators directory contains:
 
     stage_redshift.py: Defines StageToRedshiftOperator to copy JSON data from S3 to staging tables in the Redshift via copy command.
